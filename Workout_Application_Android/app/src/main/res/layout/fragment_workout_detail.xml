@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutDetailFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/workout_image_detail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:foreground="@drawable/custom_background2"
+        android:scaleType="fitXY"
+        android:src="@drawable/work1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout"
+        android:id="@+id/title_detail"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workout_image_detail"
+        android:layout_margin="30dp"
+        android:elevation="20dp"
+        android:id="@+id/card_detail"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:id="@+id/exercises_detail"/>
+
+        <ListView
+            android:id="@+id/workout_exercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <android.widget.Button
+        android:id="@+id/btnComplete"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins"
+        android:text="Workout Completed"
+        android:textAllCaps="false"
+        android:textColor="#5D5C61"
+        android:textSize="20dp" />
+
+</RelativeLayout>

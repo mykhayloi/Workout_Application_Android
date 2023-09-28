@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Workouts"
+        android:icon="@drawable/ic_baseline_sports_24"
+        android:id="@+id/workoutListFragment"/>
+    <item android:title="Map"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:id="@+id/mapFragment"/>
+    <item android:title="Surprise!"
+        android:icon="@drawable/ic_baseline_auto_awesome_24"
+        android:id="@+id/congratulationsFragment"/>
+</menu>

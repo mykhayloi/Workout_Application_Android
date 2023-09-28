@@ -1,0 +1,23 @@
+Welcome to our Workout Application!
+
+This is a short documentation helping you navigate our app.
+
+The first page contains a list of workouts and a progress card. The Progress card shows, how many times the user has been inspired, how many workouts they have completed and how many total minutes they have worked out.
+
+In addiditon, there is an 'INSPIRED' button that pulls an inspirational quote froma an API and shows it to the user. 
+
+The '?' button in the top right if the progress card, is a help dialogue explaining what the progress card is. 
+- PRESSING THIS BUTTON WILL RESET YOUR LOCAL STORAGE AND DELETE ANY DATA YOU HAVE SAVED ON THE APPLICATION -
+
+The List of Workouts include one preloaded workout.
+
+By pressing on the plus at the bottom right corner of the app, you can create a workout. 
+After filling out a title and duration for the workout you can create the workout, it will be stored locally, and displayed with the list of workouts. 
+
+Clicking on the workout will take you to a detail view of the workout, showing you more information, and allowing you to complete a workout. 
+
+When you click the 'COMPLETED WORKOUT' button on the details page, the workout and time worked out will be added to your progress bar. 
+
+The second page of our navigation leads to the map segment of our project. This map shows all the local gyms available to the user. 
+
+Enjoy our application!

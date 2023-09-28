@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/workoutListFragment">
+
+    <fragment
+        android:id="@+id/workoutListFragment"
+        android:name="com.example.workout_application_android.WorkoutListFragment"
+        android:label="Workouts"
+        tools:layout="@layout/fragment_workout_list"
+        />
+
+    <activity
+        android:id="@+id/mapFragment"
+        android:name="com.example.workout_application_android.MapsActivity"
+        android:label="Maps"
+        tools:layout="@layout/fragment_map"
+        />
+
+    <fragment
+        android:id="@+id/congratulationsFragment"
+        android:name="com.example.workout_application_android.CongradulationsFragment"
+        android:label="Congrats"
+        tools:layout="@layout/fragment_congratulations"
+        />
+
+
+    <fragment
+        android:id="@+id/workoutDetailFragment"
+        android:name="com.example.workout_application_android.WorkoutDetailFragment"
+        tools:layout="@layout/fragment_workout_detail">
+
+        <argument
+            android:name="workout"
+            app:argType="com.example.workout_application_android.Workout" />
+
+    </fragment>
+    <action android:id="@+id/action_global_workoutDetailFragment"
+        app:destination="@id/workoutDetailFragment" />
+    <!--
+
+    <argument
+            android:name="workout"
+            app:argType="com.example.ivchenko_palinec_finalproj.Workout" />
+
+
+        -->
+
+</navigation>
